@@ -13,8 +13,8 @@ Check index.js and live2d.html. Backend(index.js) send random message and random
 ## Installation
 1. In terminal, run
 `node index.js`
-2. Launch OBS with argument "--enable-gpu" [Mac](https://obsproject.com/forum/threads/how-do-i-enable-webgl-in-browsersource-mac-10-13-3-includes-logfile.83960/)
-3. Add Browser overlay in OBS, with address "http://localhost:3000"
+2. Launch OBS with argument "--enable-gpu" [In mac](https://obsproject.com/forum/threads/how-do-i-enable-webgl-in-browsersource-mac-10-13-3-includes-logfile.83960/)
+3. Add Browser overlay in OBS, with address `http://localhost:3000`
 
 ## Related Project
 
