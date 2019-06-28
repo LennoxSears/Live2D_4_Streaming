@@ -1,0 +1,87 @@
+{
+	"type":"Live2D Model Setting",
+	"name":"shizuku",
+	"model":"shizuku.moc",
+	"textures":
+	[
+		"shizuku.1024/texture_00.png",
+		"shizuku.1024/texture_01.png",
+		"shizuku.1024/texture_02.png",
+		"shizuku.1024/texture_03.png",
+		"shizuku.1024/texture_04.png",
+		"shizuku.1024/texture_05.png"
+	],
+	"physics":"shizuku.physics.json",
+	"pose":"shizuku.pose.json",
+	"expressions":
+	[
+	 {"name":"angry","file":"expressions/angry.exp.json"},
+	 {"name":"happy","file":"expressions/happy.exp.json"},
+	 {"name":"smile","file":"expressions/smile.exp.json"},
+	 {"name":"upset","file":"expressions/upset.exp.json"}
+	],
+	"layout":
+	{
+		"center_x":0,
+		"y":1.2,
+		"width":2.4
+	},
+	"hit_areas":
+	[
+		{"name":"head", "id":"D_REF.HEAD"},
+		{"name":"body", "id":"D_REF.BODY"}
+	],
+	"motions":
+	{
+		"idle":
+		[
+			{"file":"motions/idle_00.mtn" ,"fade_in":2000, "fade_out":2000},
+			{"file":"motions/idle_01.mtn" ,"fade_in":2000, "fade_out":2000},
+			{"file":"motions/idle_02.mtn" ,"fade_in":2000, "fade_out":2000}
+		],
+		"plainTalk":
+		[
+			{ "file":"motions/tapBody_00.mtn", "sound":"sounds/tapBody_00.mp3" }
+		],
+		"fightingTalk":
+		[
+			{ "file":"motions/tapBody_01.mtn", "sound":"sounds/tapBody_01.mp3" }
+		],
+		"quickTalk":
+		[
+			{ "file":"motions/tapBody_02.mtn", "sound":"sounds/tapBody_02.mp3" }
+		],
+		"coverMouthWisper":
+		[
+			{ "file":"motions/pinchIn_00.mtn", "sound":"sounds/pinchIn_00.mp3" }
+		],
+		"coverMouthTalk":
+		[
+			{ "file":"motions/pinchIn_01.mtn", "sound":"sounds/pinchIn_01.mp3" }
+		],
+		"blinkTalk":
+		[
+			{ "file":"motions/pinchOut_00.mtn", "sound":"sounds/pinchOut_00.mp3" }
+		],
+		"ArrogantTalk":
+		[
+			{ "file":"motions/pinchOut_02.mtn", "sound":"sounds/pinchOut_02.mp3" }
+		],
+		"noWay":
+		[
+			{ "file":"motions/shake_00.mtn", "sound":"sounds/shake_00.mp3","fade_in":500 }
+		],
+		"titter":
+		[
+			{ "file":"motions/shake_01.mtn", "sound":"sounds/shake_01.mp3","fade_in":500 }
+		],
+		"surprise":
+		[
+			{ "file":"motions/shake_02.mtn", "sound":"sounds/shake_02.mp3","fade_in":500 }
+		],
+		"talk":
+		[
+			{ "file":"motions/flickHead_00.mtn", "sound":"sounds/flickHead_00.mp3" }
+		]
+	}
+}
