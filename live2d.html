@@ -19,10 +19,6 @@
     <script src="src/LAppLive2DManager.js"></script>
     <script src="src/SampleApp1.js"></script>
     <script type="text/javascript" src="/src/jquery.min.js"></script>
-    <script type="text/javascript">
-        var message_Path = '/live2d/'
-        var home_Path = 'https://haremu.com/'
-    </script>
     <script type="text/javascript" src="/src/message.js"></script>
 </head>
 <body onload="sampleApp1()">
@@ -30,10 +26,10 @@
       <button id="btnChange" class="active" style="display:none">Change Model</button>
   </p>
 
-<div id="land">
-    <div class="message" style="opacity:0; position:relative; top:40px">hahahaha</div>
+<div id="land" style="border: 0px red solid">
+    <div class="message" style="opacity:0; position:relative; top:0px">hahahaha</div>
 </div>
-<canvas id="glcanvas" width="280" height="380" class="live2d">
+<canvas id="glcanvas" width="600" height="600" class="live2d" style="border: 0px blue solid">
 </canvas>
 <script src="/socket.io/socket.io.js"></script>
 <script>

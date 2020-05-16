@@ -1,5 +1,6 @@
 var LAppDefine = {
     
+    MODEL_MAJOR : "assets/live2d-widget-model-hijiki/assets/hijiki.model.json",
     
     DEBUG_LOG : true,
     DEBUG_MOUSE_LOG : false, 

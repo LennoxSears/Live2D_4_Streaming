@@ -211,7 +211,7 @@ LAppModel.prototype.update = function()
     if (this.mainMotionManager.isFinished())
     {
 
-        this.startRandomMotion(LAppDefine.MOTION_GROUP_IDLE, LAppDefine.PRIORITY_IDLE);
+        //this.startRandomMotion(LAppDefine.MOTION_GROUP_IDLE, LAppDefine.PRIORITY_IDLE);
     }
 
     //-----------------------------------------------------------------

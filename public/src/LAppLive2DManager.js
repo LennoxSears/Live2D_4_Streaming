@@ -43,31 +43,31 @@ LAppLive2DManager.prototype.changeModel = function(gl)
                 this.releaseModel(0, gl);
 
                 this.createModel();
-                this.models[0].load(gl, LAppDefine.MODEL_SHIZUKU);
+                this.models[0].load(gl, LAppDefine.MODEL_MAJOR);
                 break;
             case 1:
                 this.releaseModel(0, gl);
                 this.createModel();
-                this.models[0].load(gl, LAppDefine.MODEL_SHIZUKU);
+                this.models[0].load(gl, LAppDefine.MODEL_MAJOR);
                 break;
             case 2:
                 this.releaseModel(0, gl);
                 this.createModel();
-                this.models[0].load(gl, LAppDefine.MODEL_SHIZUKU);
+                this.models[0].load(gl, LAppDefine.MODEL_MAJOR);
                 break;
             case 3:
                 this.releaseModel(0, gl);
                 this.createModel();
-                this.models[0].load(gl, LAppDefine.MODEL_SHIZUKU);
+                this.models[0].load(gl, LAppDefine.MODEL_MAJOR);
                 break;
             case 4:
                 this.releaseModel(0, gl);
                 // 一体目のモデル
                 this.createModel();
-                this.models[0].load(gl, LAppDefine.MODEL_SHIZUKU, function() {
+                this.models[0].load(gl, LAppDefine.MODEL_MAJOR, function() {
                     // 二体目のモデル
                     thisRef.createModel();
-                    thisRef.models[1].load(gl, LAppDefine.MODEL_SHIZUKU);
+                    thisRef.models[1].load(gl, LAppDefine.MODEL_MAJOR);
                 });
                 break;
             default:

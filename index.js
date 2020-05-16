@@ -19,10 +19,10 @@ http.listen(3000, function(){
 
 var randomMsg = () => {
   var MsgText = [
-        "新人主播会多多努力的，大家多多支持点个关注啊。",
-        "每天下午两点不见不散呢！",
+        "你这么可爱，点个关注啊。",
+        "每晚八点不见不散。",
         "喜欢主播可以加下QQ粉丝群584502884",
-        "直播间里大家彼此尊重，不要引战哦",
+        "直播间里大家彼此尊重，不要引战哦"
     ];
   var r = Math.floor(Math.random() * MsgText.length);
   return MsgText[r];
@@ -30,10 +30,10 @@ var randomMsg = () => {
 
 var randomMotion = () => {
   var talkMotion = [
-        "plainTalk",
-        "talk",
-        "blinkTalk"
-    ];
+    "happy",
+    "look",
+    "upset"  
+   ];
   var r = Math.floor(Math.random() * talkMotion.length);
   return talkMotion[r];
 }
@@ -55,7 +55,43 @@ var randomActivity = () => {
   sendMotionToLive2d(randomMotion());
 }
 
+var randomAction = (al) => {
+  var r = Math.floor(Math.random() * al.length);
+  al[r]();
+}
+
+var actionList = []
+var miao = () => {
+  sendMsgToLive2d("喵~");
+  sendMotionToLive2d("miao")
+}
+actionList.push(miao)
+
+var lip = () => {
+  sendMsgToLive2d("啧啧~啧啧啧~");
+  sendMotionToLive2d("lip")
+}
+actionList.push(lip)
+
+var yami = () => {
+  sendMsgToLive2d("敲好吃的~");
+  sendMotionToLive2d("yami")
+}
+actionList.push(yami)
+
+var tickle = () => {
+  sendMsgToLive2d("嘿嘿~略~");
+  sendMotionToLive2d("tickle")
+}
+actionList.push(tickle)
 ////////////////////////////////////////////////////////randomActivity
 setInterval(function() {
-  randomActivity();
+  let  r = Math.floor(Math.random() * 10);
+  (r > 5) ? randomActivity() : randomAction(actionList);
 }, 12000);
+
+
+//////////////////////////////////////////////////////////
+/*********************************************************
+ChatRoom Control
+*********************************************************/
