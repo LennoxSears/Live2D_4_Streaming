@@ -2,6 +2,7 @@ var express = require('express')
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+const port = process.env.PORT || 3000
 
 app.use(express.static('public'))
 
@@ -13,8 +14,8 @@ io.on('connection', function(socket){
   console.log('a user connected');
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(port, function(){
+  console.log('listening on *: ' + port);
 });
 
 var randomMsg = () => {
